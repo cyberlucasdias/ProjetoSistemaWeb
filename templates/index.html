@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Projeto Social Jardim Itaóca & Adjacências</title>
+
+    <!-- Aqui está o link do CSS da index do projeto -->
+    <link rel="stylesheet" href="index.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <style>
+
+/* Fundo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefdf6;
+}
+
+.container {
+    background-color: #fffdd0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h5 {
+    font-weight: bold;  
+}
+
+/* Corpo da página */
+div {
+    color: #543e2d;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #543e2d;
+    text-align: center;
+    display: block;
+}
+
+.form-half {
+    width: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.form-control {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #8f7761;
+    box-shadow: 0 0 5px rgba(84, 62, 45, 0.5);
+}
+
+/* Botão Adicionar */
+.btnAdicionar {
+    background-color: #ffff00;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btnAdicionar:hover {
+    background-color: #ffff3e;
+}
+
+/* Botão Ver */
+.btnVer {
+    background-color: #006eff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btnVer:hover {
+    background-color: #348cff;
+}
+
+    </style>
+
+    <div class="container mt-4">
+        <!-- Cabeçalho da página inicial do sistema -->
+       
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logotipo da ONG" class="logo">
+        </div>
+        
+        <br>    
+
+        <h1 class="mb-4">ONG PROJETO SOCIAL JARDIM ITÁOCA</h1>
+        <h2 class="pt-3">Controle de Refeições</h2>
+        <br>   
+
+        <!-- Mensagens de sucesso -->
+        {% with mensagens = get_flashed_messages() %}
+            {% if mensagens %}
+                <div class="alert alert-success">   
+                    {{ mensagens[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Botões de administração -->
+        <div class="mb-3">
+            <element id="btn-primary">
+                <a href="{{ url_for('adicionar') }}" class="btn btnAdicionar" title="Adicionar Refeição">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Adicionar</font>
+                    </font>
+    
+                </a>
+            </element>
+
+            <a href="{{ url_for('publico') }}" class="btn btnVer" title="Ver Refeições Públicas">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Ver</font>
+                </font>
+            </a>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <!-- Exibe refeições do dia -->
+        {% if refeicoes %}
+            <div class="row">
+                {% for refeicao in refeicoes %}
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5>{{ refeicao.tipo }}</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>{{ refeicao.descricao }}</p>
+                                <div class="mt-2">
+                                    <a href="{{ url_for('editar', id=refeicao.id) }}" class="btn btn-warning btn-sm">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Editar</font>
+                                        </font>
+                                    </a>
+                                    <form action="{{ url_for('excluir', id=refeicao.id) }}" method="post" style="display:inline;">
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza que deseja excluir esta refeição?')">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Excluir</font>
+                                            </font>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="text-muted">Nenhuma refeição cadastrada para hoje.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

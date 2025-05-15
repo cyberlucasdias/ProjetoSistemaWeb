@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Refeição</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/editar.css')}}">
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<body>
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefdf6; /* fundo externo mais claro */
+    margin: 0px;
+    padding: 30;
+    height: 75vh;
+    display: flex;
+}
+        .container {
+            background-color: #fffdd0; /* amarelo bem clarinho para o bloco principal */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            height: 150px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 150px;
+        }
+h1 {
+    color: #543e2d;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+label {
+ color: #543e2d;
+ text-align: center;
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+}
+.meal-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+button[type="submit"] {
+    background-color:#ffff00;
+    color: #000000;
+    height: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    text-align: center;
+    border: none;
+}
+a.btn-secondary {
+    background-color: #ff0000;
+    color: #fff;
+    height: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+    border:none;
+}
+
+
+
+        </style>
+    </style>
+    <div class="container mt-4">
+        <img  src="{{ url_for('static', filename='images/ong.jp.jpg')}}" alt="" width="100" height="100">
+        <p></p>
+        <h1 class="mb-4"><i class="bi bi-pencil-fill"></i><n>EDITAR REFEIÇÃO</n></h1>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="data" class="form-label">
+                    <style>
+                    label {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    input[type="date"] {
+                        width: 50%;
+                        height: 30px;
+                        font-size: 16px;
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    input[type="text"] {
+                        width: 50%;
+                        height: 20px;
+                        font-size: 16px;
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    </style>
+                    
+                    DATA:</label>
+                <input type="date" class="form-control" id="data" name="data" required value="{{ refeicao[1] }}">
+            </div>
+            <div class="mb-3">
+                <label for="tipo" class="form-label">
+                <style>
+                    .form-select {
+                        width: 50%;
+                        height: 30px;
+                        font-size: 15px;
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    select {
+                        width: 50%;
+                        height: 30px;
+                        font-size: 16px;
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                </style>
+                TIPO:</label>
+                <select class="form-select" id="tipo" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="Café da Manhã" {% if refeicao[2] == 'Café da Manhã' %}selected{% endif %}>Café da Manhã</option>
+                    <option value="Almoço" {% if refeicao[2] == 'Almoço' %}selected{% endif %}>Almoço</option>
+                    <option value="Jantar" {% if refeicao[2] == 'Jantar' %}selected{% endif %}>Jantar</option>
+                </select>
+             </div>
+            <div class="mb-3">
+                <label for="descricao" class="form-label">DESCRIÇÃO:</label>
+                <textarea class="form-control" id="descricao" name="descricao" rows="3" required>{{ refeicao[3] }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-success"><strong>Atualizar</strong></button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary"><strong>Cancelar</strong></a>
+        
+ </dody>
+</html>
