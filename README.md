@@ -1,12 +1,15 @@
-# 🎯 PROJETO ONG JARDIM ITAOCA
+# 🍽️ PROJETO ONG JARDIM ITAOCA
 
-Sistema web desenvolvido para exibir, em tempo real, o cardápio de refeições oferecidas em refeitórios da ONG Jardim Itaoca. A aplicação permite o cadastro e a visualização das refeições do dia por meio de uma interface simples e acessível, ideal para ser exibida em telas localizadas no próprio refeitório. Criado com Flask (Python), SQLite e HTML, o sistema facilita a comunicação das refeições disponíveis para os beneficiários da instituição.
+Sistema web desenvolvido para exibir, em tempo real, o cardápio de refeições oferecidas nos refeitórios da ONG Jardim Itaoca. A aplicação permite o cadastro e a visualização das refeições do dia por meio de uma interface simples e acessível, ideal para ser exibida em telas posicionadas no próprio refeitório. Desenvolvido com Flask (Python), SQLite e HTML, o sistema facilita a comunicação clara e rápida dos alimentos servidos aos beneficiários da instituição.
 
 ---
 
 ## 📦 Funcionalidades
 
-- Cadastra as trẽs principais refeições
+- Cadastro das três principais refeições do dia (café da manhã, almoço e jantar)
+- Visualização clara e direta do cardápio diário
+- Interface responsiva e otimizada para telas fixas (modo TV)
+- Painel administrativo para atualização do cardápio
 
 ---
 
@@ -39,5 +42,3 @@ pip install -r requirements.txt
 
 # Rode a aplicação
 python app.py
-os.
-
