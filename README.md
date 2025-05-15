@@ -1,12 +1,50 @@
-🍽️ Cardápio Digital para ONG
+# 🎯 Nome do Projeto
 
-Este é um sistema web desenvolvido com o objetivo de facilitar a apresentação do cardápio das refeições servidas às crianças da ONG. O sistema será exibido diretamente em uma TV no refeitório da instituição, proporcionando uma visualização clara e acessível do cardápio diário.
-📌 Objetivo
+Breve descrição do que o sistema faz. Exemplo:
+Sistema web de controle de estoque e doações para ONGs, desenvolvido com Flask e SQLite.
 
-Criar uma interface simples, e de fácil manutenção para exibir o cardápio de forma digital, substituindo quadros físicos ou listas impressas.
-🧩 Funcionalidades
+---
 
-    Exibição do cardápio diário e semanal.
-    Interface adaptada para televisores (layout limpo e legível à distância).
-    Atualização fácil do conteúdo por administradores autorizados.
+## 📦 Funcionalidades
+
+- Cadastro de produtos e categorias
+- Registro de doações recebidas
+- Controle de entrada e saída de estoque
+- Aviso de estoque baixo
+- Relatórios por categoria e data
+- Login e gerenciamento de usuários (com permissões de administrador)
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- Python 3.x
+- Flask
+- SQLite
+- HTML5 + CSS3 (Bootstrap ou Tailwind)
+- JavaScript (se aplicável)
+- AWS Elastic Beanstalk (deploy)
+
+---
+
+## ⚙️ Como rodar o projeto localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/seuusuario/nomedoprojeto.git
+
+# Acesse a pasta do projeto
+cd nomedoprojeto
+
+# Crie um ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Rode a aplicação
+python app.py
+os.
 
