@@ -1,18 +1,12 @@
-# 🎯 Nome do Projeto
+# 🎯 PROJETO ONG JARDIM ITAOCA
 
-Breve descrição do que o sistema faz. Exemplo:
-Sistema web de controle de estoque e doações para ONGs, desenvolvido com Flask e SQLite.
+Sistema web desenvolvido para exibir, em tempo real, o cardápio de refeições oferecidas em refeitórios da ONG Jardim Itaoca. A aplicação permite o cadastro e a visualização das refeições do dia por meio de uma interface simples e acessível, ideal para ser exibida em telas localizadas no próprio refeitório. Criado com Flask (Python), SQLite e HTML, o sistema facilita a comunicação das refeições disponíveis para os beneficiários da instituição.
 
 ---
 
 ## 📦 Funcionalidades
 
-- Cadastro de produtos e categorias
-- Registro de doações recebidas
-- Controle de entrada e saída de estoque
-- Aviso de estoque baixo
-- Relatórios por categoria e data
-- Login e gerenciamento de usuários (com permissões de administrador)
+- Cadastra as trẽs principais refeições
 
 ---
 
@@ -21,8 +15,7 @@ Sistema web de controle de estoque e doações para ONGs, desenvolvido com Flask
 - Python 3.x
 - Flask
 - SQLite
-- HTML5 + CSS3 (Bootstrap ou Tailwind)
-- JavaScript (se aplicável)
+- HTML5 + CSS3 (Bootstrap)
 - AWS Elastic Beanstalk (deploy)
 
 ---
