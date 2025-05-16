@@ -25,23 +25,7 @@ Você pode acessar o sistema em produção através do seguinte endereço:
 
 http://sistemaweb-env.eba-pn2gzffg.us-east-2.elasticbeanstalk.com/admin
 
+## 👥 Colaboradores
 
-## ⚙️ Como rodar o projeto localmente
-
-```bash
-# Clone o repositório
-git clone https://github.com/seuusuario/nomedoprojeto.git
-
-# Acesse a pasta do projeto
-cd nomedoprojeto
-
-# Crie um ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
-
-# Instale as dependências
-pip install -r requirements.txt
-
-# Rode a aplicação
-python app.py
+- [@lucasdias](https://github.com/cyberlucasdias)
+- [@nomeDoColaborador](https://github.com/nomeDoColaborador) – Função ou contribuição
