@@ -28,4 +28,9 @@ http://sistemaweb-env.eba-pn2gzffg.us-east-2.elasticbeanstalk.com/admin
 ## 👥 Colaboradores
 
 - [Lucas Dias](https://github.com/cyberlucasdias)
-- [@nomeDoColaborador](https://github.com/nomeDoColaborador) – Função ou contribuição
+- [Jansen Santos](https://github.com/Jan100jr)
+- [Paulo José](https://github.com/paulo-jose-pinheiro)
+- [Erik Paiva](https://github.com/ErikPaiva06)
+- [Guilherme Machado](https://github.com/Guippp)
+- [Vitória Camargo](https://github.com/viviccamargo)
+- [Eduarda Jesus](https://github.com/Eduarda02-HUB)
