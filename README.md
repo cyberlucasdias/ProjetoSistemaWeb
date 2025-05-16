@@ -1,4 +1,4 @@
-# 🍽️ PROJETO ONG SOCIAL JARDIM ITAOCA
+# 🍽️ ONG PROJETO SOCIAL JARDIM ITAOCA
 
 Sistema web desenvolvido para exibir, em tempo real, o cardápio de refeições oferecidas nos refeitórios da ONG Jardim Itaoca. A aplicação permite o cadastro e a visualização das refeições do dia por meio de uma interface simples e acessível, ideal para ser exibida em telas posicionadas no próprio refeitório. Desenvolvido com Flask (Python), SQLite e HTML, o sistema facilita a comunicação clara e rápida dos alimentos servidos aos beneficiários da instituição.
 
