@@ -27,5 +27,5 @@ http://sistemaweb-env.eba-pn2gzffg.us-east-2.elasticbeanstalk.com/admin
 
 ## 👥 Colaboradores
 
-- [@lucasdias](https://github.com/cyberlucasdias)
+- [Lucas Dias](https://github.com/cyberlucasdias)
 - [@nomeDoColaborador](https://github.com/nomeDoColaborador) – Função ou contribuição
