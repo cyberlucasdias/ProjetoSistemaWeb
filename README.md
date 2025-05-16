@@ -16,7 +16,7 @@ Sistema web desenvolvido para exibir, em tempo real, o cardápio de refeições 
 - Python 3.x
 - Flask
 - SQLite
-- HTML5 + CSS3 (Bootstrap)
+- HTML + CSS (Bootstrap)
 - AWS Elastic Beanstalk (deploy)
 
 ## 🌐 Acesso online
