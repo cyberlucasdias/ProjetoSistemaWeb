@@ -27,7 +27,7 @@ http://sistemaweb-env.eba-pn2gzffg.us-east-2.elasticbeanstalk.com/admin
 
 Link de apresentação do projeto:
 
-https://www.youtube.com/watch?v=M1ZjJ_IV1Tg
+https://youtu.be/YOXeHLVxyAA
 
 ## 👥 Colaboradores
 
