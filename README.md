@@ -26,8 +26,7 @@ Você pode acessar o sistema em produção através do seguinte endereço:
 http://sistemaweb-env.eba-pn2gzffg.us-east-2.elasticbeanstalk.com/admin
 
 Link de apresentação do projeto:
-
-https://youtu.be/YOXeHLVxyAA
+https://www.youtube.com/watch?v=afUEsASW_nE
 
 ## 👥 Colaboradores
 
